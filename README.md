@@ -1,5 +1,5 @@
 # TP_CPP_M1SSI
-CLI text similarity calculator
+(command line interface) Cosine Similarity calculator
 
 # Download
 wget https://github.com/riadkb/TP_CPP_M1SSI/releases/download/TP_CPP/main.zip
