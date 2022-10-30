@@ -52,6 +52,7 @@ map<string, int> readFile(string filePath) {
 
 //Main-----------------------------------------------------------------------
 int main(int argc, char *argv[]) {
+    map<string, int> f1,f2;
     f1 = readFile(argv[1]);
     f2 = readFile(argv[2]);
     vector<string> keys;
