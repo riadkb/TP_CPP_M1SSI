@@ -25,9 +25,9 @@ map<string, int> readFile(string filePath) {
             character += tolower(line[i]);
             if ((character != " ") & (int(line[i]) != 13) & (character.length() > 0)){
                 word += character;
-            } else{  // end word
-                if (int(word[0]) != 0){  // not empty
-                    if (fMap.count(word) == 1){  // already exist in map
+            } else{ 
+                if (int(word[0]) != 0){
+                    if (fMap.count(word) == 1){ 
                         fMap[word] ++;
                     }else{
                         fMap[word] = 1;
@@ -37,8 +37,8 @@ map<string, int> readFile(string filePath) {
                 }
             }
         }
-        // last word
-        if ((int(word[0]) != 13) & (int(word[0]) != 0)){  // not empyt or \n
+        
+        if ((int(word[0]) != 13) & (int(word[0]) != 0)){ 
             if (fMap.count(word) == 1){
                 fMap[word] ++;
             }else{
@@ -57,13 +57,11 @@ int main(int argc, char *argv[]) {
     vector<string> keys;
     for (auto it = f1.begin(); it != f1.end(); ++it) {
         if (find(keys.begin(), keys.end(), it->first) == keys.end()){
-            // not found
             keys.push_back(it->first);
         }
     }
     for (auto it = f2.begin(); it != f2.end(); ++it) {
         if (find(keys.begin(), keys.end(), it->first) == keys.end()){
-            // not found
             keys.push_back(it->first);
         }
     }
