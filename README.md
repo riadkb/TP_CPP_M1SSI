@@ -2,7 +2,7 @@
 CLI text similarity calculator
 
 # Download
-wget https://github.com/MrDznonyme/simapp/files/9892491/Simapp_v2.zip
+wget https://github.com/riadkb/TP_CPP_M1SSI/releases/download/TP_CPP/main.zip
 
 # Usage
 gcc main.cpp -o main -lstdc++ -lm
